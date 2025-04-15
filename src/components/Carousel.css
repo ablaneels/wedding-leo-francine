@@ -1,0 +1,21 @@
+.carousel {
+    position: sticky;
+    display: flex;
+    max-width: 40%;
+    width: 100%;
+    padding: 8px;
+    float: left;
+}
+
+.carousel-img {
+    width: 100%;
+}
+
+@media screen and (max-width: 960px) {
+    .carousel {
+        position: sticky;
+        display: flex;
+        max-width: none;
+        width: 100%;
+    }
+}
