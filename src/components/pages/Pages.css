@@ -1,0 +1,102 @@
+.home {
+    display: flex;
+    position: sticky;
+    width: 100%;
+    max-width: 60%;
+    padding-top: 10%;
+    float: right;
+    flex-direction: column;
+}
+.date {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: #fff;
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.venue {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.text {
+    width: 100%;
+    text-align: center;
+    color: #96BDBC;
+    font-family: "Afacad", sans-serif;
+    font-size: 14px;
+    font-weight:normal;
+    font-style: normal;
+}
+
+.text-paragraphe {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-family: "Afacad", sans-serif;
+    font-size: 20px;
+    font-weight:normal;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.text-bold {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-family: "Afacad", sans-serif;
+    font-size: 40px;
+    font-weight:400;
+    font-style: normal;
+}
+
+.text-date {
+    width: 100%;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+    font-family: "Afacad", sans-serif;
+    font-size: 96px;
+    font-weight:400;
+    font-style: normal;
+}
+
+.text-venue {
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #96BDBC;
+    font-family: "Afacad", sans-serif;
+    font-size: 14px;
+    font-weight:normal;
+    font-style: normal;
+}
+
+.text-place {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-family: "Afacad", sans-serif;
+    font-size: 20px;
+    font-weight:400;
+    font-style: normal;
+}
+
+.line-parent {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: #96BDBC;
+    width: 100%;
+}
+
+.line {
+    color: #96BDBC;
+    width: 30px;
+}
