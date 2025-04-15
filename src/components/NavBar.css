@@ -1,21 +1,22 @@
 .navbar {
-    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
     height: 80px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     font-size: 1.2rem;
     position: sticky;
     top: 0;
+    resize: horizontal;
+    width: 100%;
+    max-width: 60%;
     z-index: 999;
+    float: right;
 }
   
 .navbar-container {
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 80px;
-    max-width: 1500px;
 }
   
 .navbar-logo {
@@ -49,24 +50,46 @@
 }
   
 .navbar-link {
-    color: #fff;
+    color: #96BDBC;
     display: flex;
     align-items: center;
     text-decoration: none;
     height: 100%;
+    font-family: "Afacad", sans-serif;
+    font-size: 14px;
+    font-weight:400;
+    font-style: normal;
 }
   
 .navbar-link:hover {
-    border-bottom: 4px solid #fff;
+    color: #fff;
+    font-size: larger;
     transition: all 0.2s ease-out;
+    font-family: "Afacad", sans-serif;
+    font-size: 14px;
+    font-weight:400;
+    font-style: normal;
 }
-  
+/* current selected link */
+/* .navbar-link: {
+    color: #96BDBC;
+    font-size: larger;
+    font-family: "Afacad", sans-serif;
+    font-size: 14px;
+    font-weight:400;
+    font-style: normal;
+} */
+
 .fa-bars {
     color: #fff;
 }
   
 .navbar-link-mobile {
     display: none;
+    font-family: "Afacad", sans-serif;
+    font-size: 14px;
+    font-weight:400;
+    font-style: normal;
 }
   
 .menu-icon {
@@ -83,6 +106,28 @@
         position: relative;
     }
   
+    .navbar {
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        resize: none;
+        max-width: 100%;
+        float: none;
+    }
+
+    .navbar-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        max-width: 1500px;
+    }
+
     .menu {
         display: flex;
         flex-direction: column;
@@ -111,12 +156,20 @@
         text-align: center;
         align-items: center;
         justify-content: center;
+        font-family: "Afacad", sans-serif;
+        font-size: 14px;
+        font-weight:400;
+        font-style: normal;
     }
   
     .navbar-link:hover {
         background-color: #fff;
         color: #242424;
         border-radius: 0;
+        font-family: "Afacad", sans-serif;
+        font-size: 14px;
+        font-weight:400;
+        font-style: normal;
     }
   
     .navbar-logo {
@@ -147,16 +200,23 @@
         border-radius: 4px;
         width: 80%;
         text-decoration: none;
-        font-size: 1.5rem;
         background-color: transparent;
         color: #fff;
         border: 1px solid #fff;
         transition: all 0.3s ease-out;
+        font-family: "Afacad", sans-serif;
+        font-size: 14px;
+        font-weight:400;
+        font-style: normal;
     }
   
     .navbar-link-mobile:hover {
         background: #fff;
         color: #242424;
         transition: 250ms;
+        font-family: "Afacad", sans-serif;
+        font-size: 14px;
+        font-weight:400;
+        font-style: normal;
     }
 }
