@@ -1,0 +1,89 @@
+.dresscode {
+    display: flex;
+    max-width: 60%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.title {
+    color: #FFF;
+    text-align: center;
+    font-family: Afacad;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.color_title {
+    color: #96BDBC;
+    text-align: center;
+    font-family: Afacad;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.color {
+    max-width: 651px;
+    height: 194px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid #FFF;
+    background: url("../../../public/pictures/Outfit Color Palette 1.png") lightgray 50% / cover no-repeat;
+}
+
+.style_title {
+    color: #96BDBC;
+    text-align: center;
+    font-family: Afacad;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.style {
+    color: #FFF;
+    text-align: center;
+    font-family: Afacad;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.forbidden_title {
+    color: #96BDBC;
+    text-align: center;
+    font-family: Afacad;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.forbidden {
+    color: #FFF;
+    text-align: center;
+    font-family: Afacad;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.line {
+    width: 30px;
+    height: 1px;
+    color: #96BDBC;
+}
