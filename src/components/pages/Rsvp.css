@@ -1,0 +1,74 @@
+.rsvp {
+    display: inline-flex;
+    max-width: 60%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.type1_container {
+    gap: 12px;
+}
+
+.title {
+    color: #FFF;
+    text-align: center;
+    font-family: Afacad;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.text {
+    color: #96BDBC;
+
+    text-align: center;
+    font-family: Afacad;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.form {
+    gap: 20px;
+}
+
+.form_label{
+    color: #96BDBC;
+    font-family: Afacad;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.form_placeholder {
+    color: #025869;
+    font-family: Afacad;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.button {
+    max-width: 417px;
+    height: 43px;
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #021F25;
+}
+
+.line {
+    width: 30px;
+    height: 1px;
+    color: #96BDBC;
+}
