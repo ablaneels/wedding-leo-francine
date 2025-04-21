@@ -1,0 +1,73 @@
+.venue {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.title {
+    color: #FFF;
+    text-align: center;
+    font-family: Afacad;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.website {
+    color: #96BDBC;
+    font-family: Afacad;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tab {
+    color: #FFF;
+    text-align: center;
+    font-family: Afacad;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.subtab_title {
+    color: #96BDBC;
+    text-align: center;
+    font-family: Afacad;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.subtab_text {
+    color: #FFF;
+    text-align: center;
+    font-family: Afacad;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.line {
+    width: 30px;
+    height: 1px;
+    color: #96BDBC;
+}

@@ -1,30 +1,36 @@
 import React from 'react'
-import './Pages.css'
+import './Venue.css'
+import { useTranslation } from 'react-i18next';
 
 function Venue() {
+    const { t } = useTranslation();
   return (
-    <div className='home'>
-      <div className='text-bold'>DOMAINE DE MILLON</div>
-      <div className='text'>DOMAINEDEMILLON.FR</div>
-      <div className='venue'>
-        <div className='text-venue'>ABOUT</div>
-        <div className='text-venue'>|</div>
-        <div className='text-venue'>SLEEPING</div>
-        <div className='text-venue'>|</div>
-        <div className='text-venue'>TRANSPORTATION</div>
+    <div className='venue'>
+      <div className='title'>
+        {t('venue_title')}
+        <div className='website'>{t('venue_website')}</div>
       </div>
-      <div className='line-parent'>
-        <hr className='line'/>
+      <div className='tabs'>
+        <div className='tab'>{t('venue_about')}</div>
+        <div className='tab'>|</div>
+        <div className='tab'>{t('venue_sleeping')}</div>
+        <div className='tab'>|</div>
+        <div className='tab'>{t('venue_transportation')}</div>
       </div>
-      <div className='text'>DESCRIPTION</div>
-      <div className='text-paragraphe'>The SEVEN ACRES Domaine de Millon, on which is located a Basque-Landes mansion, independent lodgings in the middle of the forest, is a natural space in which you can enjoy your family and friends in complete serenity and security.<br/>The little extra of the Domaine is certainly the pond… A true haven of peace.</div>
-      <div className='text'>ACCOMMODATION</div>
-      <div className='text-paragraphe'>Our five cottages, four of which have their own swimming pool, are at your disposal from Friday to Sunday (22 beds) and on Saturday evening you will have at your disposal our guest rooms in the family home (11 beds).<br/>A total of 33 beds to enjoy your families and friends in complete harmony and tranquility.</div>
-      <div className='line-parent'>
-        <hr className='line'/>
+      <hr className='line'/>
+      <div>
+        <div className='subtab_title'>{t('venue_description_title')}</div>
+        <div className='subtab_text'>{t('venue_description_text')}</div>
       </div>
-      <div className='text'>ADDRESS</div>
-      <div className='text-paragraphe'>682 Route de Millon, 40140 Soustons, France</div>
+      <div>
+        <div className='subtab_title'>{t('venue_accommodation_title')}</div>
+        <div className='subtab_text'>{t('venue_accommodation_text')}</div>
+      </div>
+      <hr className='line'/>
+      <div>
+        <div className='subtab_title'>{t('venue_address_title')}</div>
+        <div className='subtab_text'>{t('venue_address_text')}</div>
+      </div>
     </div>
   )
 }

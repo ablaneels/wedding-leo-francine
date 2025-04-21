@@ -1,41 +1,40 @@
 import React from 'react'
-import './Pages.css'
+import './Home.css'
+
+import { useTranslation } from 'react-i18next';
 
 function Home() {
+  const { t } = useTranslation();
   return (
     <>
     <div className='home'>
-        <div className='text'>
-          SAVE THE DATE
+        <div className='home_title'>
+          {t('home_title')}
         </div>
-        <div className='text-bold'>
-          FRANCINE TORRES & LEO BLOUARD
+        <div className='home_names'>
+          {t('home_names')}
         </div>
-        <div className='line-parent'>
-          <hr className='line'/>
-        </div>
+        <hr className='line'/>
         <div className='date'>
-          <div>
-            <div className='text'>MONTH</div>
-            <div className='text-date'>06</div>
+          <div className='date_cell'>
+            <div className='date_cell_text'>{t('home_month')}</div>
+            <div>{t('home_month_nbr')}</div>
           </div>
-          <div>
-            <div className='text'>DAY</div>
-            <div className='text-date'>27</div>
+          <div className='date_cell'>
+            <div className='date_cell_text'>{t('home_day')}</div>
+            <div>{t('home_day_nbr')}</div>
           </div>
-          <div>
-            <div className='text'>YEAR</div>
-            <div className='text-date'>26</div>
+          <div className='date_cell'>
+            <div className='date_cell_text'>{t('home_year')}</div>
+            <div>{t('home_year_nbr')}</div>
           </div>
         </div>
-        <div className='line-parent'>
-          <hr className='line'/>
-        </div>
-        <div className='text-place'>
-          DOMAINE DE MILLON
-        </div>
-        <div className='text'>
-          SOUSTONS, FRANCE
+        <hr className='line'/>
+        <div className='place'>
+          {t('home_place')}
+          <div className='place_city'>
+            {t('home_place_city')}
+          </div>
         </div>
     </div>
     </>
