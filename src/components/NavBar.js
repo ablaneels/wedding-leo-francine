@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import './NavBar.css';
 import Open from "../icons/menu-open.svg"
 import Close from "../icons/close-square-svgrepo-com.svg"
-import { Button } from './Button';
 
 
 function NavBar() {
