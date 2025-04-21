@@ -8,6 +8,7 @@ import Rsvp from './components/pages/Rsvp';
 import Venue from './components/pages/Venue';
 import DressCode from './components/pages/DressCode';
 import Agenda from './components/pages/Agenda';
+import LanguageSwitcher from './components/LanguageSwitcher';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path='dresscode' exact Component={DressCode}/>
           <Route path='agenda' exact Component={Agenda}/>
         </Routes>
+        <LanguageSwitcher />
       </Router>
     </>
   );

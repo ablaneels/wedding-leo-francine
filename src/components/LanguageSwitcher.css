@@ -1,0 +1,49 @@
+.lang {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.button {
+    color: #96BDBC;
+    text-align: center;
+    font-family: Afacad;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    background: #025869;
+    border: 0;
+    padding: 0;
+    max-width: none;
+    width: auto;
+}
+
+.selected_button {     
+    color: #FFF; 
+    text-align: center;
+    font-family: Afacad;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    background: #025869;
+    border: 0;
+    padding: 0;
+    max-width: none;
+    width: auto;
+}
+
+.separator {
+    color: #96BDBC;
+    text-align: center;
+    font-family: Afacad;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
