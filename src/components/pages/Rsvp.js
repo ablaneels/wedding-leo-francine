@@ -2,24 +2,31 @@ import React from 'react'
 import './Rsvp.css'
 import { useTranslation } from 'react-i18next';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import emailjs from '@emailjs/browser';
 
 function Rsvp() {
   const { t } = useTranslation();
 
   const [validated, setValidated] = useState(false);
 
-  const handleSubmit = (event) => {
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
-    // else {
-    // }
-    setValidated(true);
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_ltqr958', 'template_jlo52kr', form.current, 'etExhhBO_Fa8Q3gmx')
+      .then((result) => {
+          console.log('Email sent:', result.text);
+          alert('Message sent!');
+      }, (error) => {
+          console.log('Error:', error.text);
+          alert('Something went wrong.');
+      });
+
+    e.target.reset();
   };
   return (
     <>
@@ -29,10 +36,11 @@ function Rsvp() {
         <div className='text'>{t('rsvp_text')}</div>
       </div>
         <hr className='line'/>
-      <Form className='form'>
+      <Form className='form' ref={form} onSubmit={sendEmail}>
         <Form.Group className="mb-3" controlId="formName">
           <Form.Label className='form_label'>{t('rsvp_name')}</Form.Label>
           <Form.Control
+            name='user_name'
             className='form_placeholder'
             required
             type="text"
@@ -44,6 +52,7 @@ function Rsvp() {
         <Form.Group className="mb-3" controlId="forEmail">
           <Form.Label className='form_label'>{t('rsvp_email')}</Form.Label>
           <Form.Control
+            name='user_email'
             className='form_placeholder'
             required
             type="text"
@@ -55,6 +64,7 @@ function Rsvp() {
         <Form.Group className="mb-3" controlId="forPeople">
           <Form.Label className='form_label'>{t('rsvp_nbr_people')}</Form.Label>
           <Form.Control
+            name='number_of_people'
             className='form_placeholder'
             required
             type="text"
