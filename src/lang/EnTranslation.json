@@ -1,4 +1,9 @@
 {
+    "navbar_home": "HOME",
+    "navbar_rsvp": "RSVP",
+    "navbar_venue": "VENUE",
+    "navbar_dressCode": "DRESS CODE",
+    "navbar_agenda": "AGENDA",
     "home_title": "SAVE THE DATE",
     "home_names": "FRANCINE TORRES & LEO BLOUARD",
     "home_month": "MONTH",
