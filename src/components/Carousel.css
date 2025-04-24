@@ -1,22 +1,25 @@
 .carousel {
-    position: sticky;
-    display: flex;
-    max-width: 40%;
-    width: 100%;
+    width: 40vw;
     padding: 8px;
     float: left;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
 }
 
-.carousel-img {
+.carousel-image {
+    height: 100%;
     width: 100%;
     object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
 }
 
 @media screen and (max-width: 960px) {
     .carousel {
         position: sticky;
         display: flex;
-        max-width: none;
         width: 100%;
+        height: 30vh;
+
     }
 }
