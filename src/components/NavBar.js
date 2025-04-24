@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import './NavBar.css';
 import Open from "../icons/menu-open.svg"
 import Close from "../icons/close-square-svgrepo-com.svg"
@@ -8,6 +8,8 @@ import Close from "../icons/close-square-svgrepo-com.svg"
 function NavBar() {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
+    const location = useLocation();
+    const selectedLink =  location.pathname;
     
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
@@ -29,27 +31,27 @@ function NavBar() {
                 </div>
                 <ul className={click ? 'menu active': 'menu'}>
                     <li className='navbar-item'>
-                        <Link to="/" className="navbar-link" onClick={closeMobileMenu}>
+                        <Link to="/" className={selectedLink === '/' ? 'selected-navbar-link' : 'navbar-link'} onClick={closeMobileMenu}>
                             HOME
                         </Link>
                     </li>
                     <li className='navbar-item'>
-                        <Link to="/rsvp" className="navbar-link" onClick={closeMobileMenu}>
+                        <Link to="/rsvp" className={selectedLink === '/rsvp' ? 'selected-navbar-link' : 'navbar-link'} onClick={closeMobileMenu}>
                             RSVP
                         </Link>
                     </li>
                     <li className='navbar-item'>
-                        <Link to="/venue" className="navbar-link" onClick={closeMobileMenu}>
+                        <Link to="/venue" className={selectedLink === '/venue' ? 'selected-navbar-link' : 'navbar-link'} onClick={closeMobileMenu}>
                             VENUE
                         </Link>
                     </li>
                     <li className='navbar-item'>
-                        <Link to="/dresscode" className="navbar-link" onClick={closeMobileMenu}>
+                        <Link to="/dresscode" className={selectedLink === '/dresscode' ? 'selected-navbar-link' : 'navbar-link'} onClick={closeMobileMenu}>
                             DRESS CODE
                         </Link>
                     </li>
                     <li className='navbar-item'>
-                        <Link to="/agenda" className="navbar-link" onClick={closeMobileMenu}>
+                        <Link to="/agenda" className={selectedLink === '/agenda' ? 'selected-navbar-link' : 'navbar-link'} onClick={closeMobileMenu}>
                             AGENDA
                         </Link>
                     </li>

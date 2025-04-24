@@ -70,15 +70,18 @@
     font-weight:400;
     font-style: normal;
 }
-/* current selected link */
-/* .navbar-link: {
-    color: #96BDBC;
-    font-size: larger;
+
+.selected-navbar-link {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    height: 100%;
     font-family: "Afacad", sans-serif;
     font-size: 14px;
     font-weight:400;
     font-style: normal;
-} */
+}
 
 .fa-bars {
     color: #fff;
@@ -112,7 +115,7 @@
         justify-content: center;
         align-items: center;
         font-size: 1.2rem;
-        position: sticky;
+        position: fixed !important;
         top: 0;
         z-index: 999;
         resize: none;
@@ -172,6 +175,19 @@
         font-style: normal;
     }
   
+    .selected-navbar-link {
+        color: #fff;
+        width: 100%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-family: "Afacad", sans-serif;
+        font-size: 14px;
+        font-weight:400;
+        font-style: normal;
+    }
+
     .navbar-logo {
         position: absolute;
         top: 0;
@@ -185,7 +201,6 @@
         top: 0;
         right: 0;
         transform: translate(-100%, 60%);
-        font-size: 1.8rem;
         cursor: pointer;
     }
   

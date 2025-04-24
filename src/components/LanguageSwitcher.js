@@ -10,9 +10,9 @@ function LanguageSwitcher ({ t }) {
   };
   return (
     <div className='lang'>
-      <button className={selectedLang === 'en' ? 'selected_button' : 'button'} onClick={() => changeLanguage('en')}>En</button>
+      <button className={selectedLang === 'en' ? 'selected_button' : 'unselected_button'} onClick={() => changeLanguage('en')}>En</button>
       <div className='separator'>|</div>
-      <button className={selectedLang === 'fr' ? 'selected_button' : 'button'} onClick={() => changeLanguage('fr')}>Fr</button>
+      <button className={selectedLang === 'fr' ? 'selected_button' : 'unselected_button'} onClick={() => changeLanguage('fr')}>Fr</button>
       {/* Add more language buttons as needed */}
     </div>
     );

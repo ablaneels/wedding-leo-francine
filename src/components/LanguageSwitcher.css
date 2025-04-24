@@ -1,11 +1,17 @@
 .lang {
+    position: fixed; /* stick to the screen */
+    bottom: 0;
+    right: 0;
+    width: 60vw;
+    padding: 15px 20px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
+    z-index: 1000;
 }
 
-.button {
+.unselected_button {
     color: #96BDBC;
     text-align: center;
     font-family: Afacad;
@@ -14,7 +20,7 @@
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
-    background: #025869;
+    background: none;
     border: 0;
     padding: 0;
     max-width: none;
@@ -30,7 +36,7 @@
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
-    background: #025869;
+    background: none;
     border: 0;
     padding: 0;
     max-width: none;
@@ -46,4 +52,62 @@
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 960px) {
+    .lang {
+        position: fixed; /* stick to the screen */
+        height: 80px;
+        top: 0;
+        left: 0;
+        padding: 8px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        z-index: 1000;
+    }
+
+    .unselected_button {
+        color: #96BDBC;
+        text-align: center;
+        font-family: Afacad;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        background: none;
+        border: 0;
+        padding: 0;
+        max-width: none;
+        width: auto;
+    }
+
+    .selected_button {     
+        color: #FFF; 
+        text-align: center;
+        font-family: Afacad;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        background: none;
+        border: 0;
+        padding: 0;
+        max-width: none;
+        width: auto;
+    }
+    
+    .separator {
+        color: #96BDBC;
+        text-align: center;
+        font-family: Afacad;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+    }
 }
