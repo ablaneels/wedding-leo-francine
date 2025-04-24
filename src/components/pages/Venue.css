@@ -1,9 +1,21 @@
 .venue {
     display: flex;
-    width: 60%;
+    width: 60vw;
+    overflow: hidden;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
+}
+
+@media screen and (max-width: 960px) {
+    .venue {
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
 }
 
 .title {
@@ -34,7 +46,7 @@
 }
 
 .tab {
-    color: #FFF;
+    color: #96BDBC;
     text-align: center;
     font-family: Afacad;
     font-size: 14px;
@@ -43,6 +55,10 @@
     line-height: normal;
     text-transform: uppercase;
 }
+
+.tab.active {
+    color: white;
+  }
 
 .subtab_title {
     color: #96BDBC;
