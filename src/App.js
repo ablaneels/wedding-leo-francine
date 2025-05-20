@@ -9,11 +9,19 @@ import Venue from './components/pages/Venue';
 import DressCode from './components/pages/DressCode';
 import Agenda from './components/pages/Agenda';
 import LanguageSwitcher from './components/LanguageSwitcher';
+import FlowerTop from "./icons/7103500 3.svg"
+import FlowerBotton from "./icons/7103500 2.svg"
 
 function App() {
   return (
     <>
       <Router>
+        <div className='flowertopdiv'>
+          <img src={FlowerTop} className='flowertop'/>
+        </div>
+        <div className='flowerbottomdiv'>
+          <img src={FlowerBotton} className='flowerbottom'/>
+        </div>
         <NavBar/>
         <Carousel/>
         <Routes>

@@ -1,0 +1,26 @@
+.flowertopdiv {
+    position: fixed;
+    top: -70px;
+    right: -3px;
+    z-index: -1; /* Behind everything */
+    pointer-events: none; /* So it doesn't block clicks */
+}
+.flowertop {
+    display: flex;
+    width: 176.104px;
+    height: 282.626px;
+    flex-shrink: 0;
+}
+.flowerbottomdiv {
+    position: fixed;
+    bottom: 0;
+    right: -25px;
+    z-index: -1; /* Behind everything */
+    pointer-events: none; /* So it doesn't block clicks */
+}
+.flowerbottom {
+    width: 196px;
+    height: 315px;
+    flex-shrink: 0;
+    aspect-ratio: 28/45;
+}

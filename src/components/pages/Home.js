@@ -7,10 +7,11 @@ function Home() {
   const { t } = useTranslation();
   return (
     <>
+    <div className='home_title'>
+      {t('home_title')}
+    </div>
     <div className='home'>
-        <div className='home_title'>
-          {t('home_title')}
-        </div>
+        
         <div className='home_names'>
           {t('home_names')}
         </div>

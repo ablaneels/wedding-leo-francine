@@ -42,7 +42,7 @@ function Venue() {
         </div>
       </div>
       <hr className='line'/>
-      <div>
+      <div className='venue'>
         {activeTab === 'about' && (
           <>
             <div>
