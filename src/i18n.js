@@ -1,5 +1,7 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
+
 // Import translations
 import translationEN from './lang/EnTranslation.json'; // English
 import translationFR from './lang/FrTranslation.json'; // French (example)
@@ -12,9 +14,13 @@ const resources = {
     translation: translationFR,
   },
 };
-i18n.use(initReactI18next).init({
+
+i18n
+.use(initReactI18next)
+.use(LanguageDetector)
+.init({
+  supportedLngs: ['en', 'fr'],
   resources,
-  lng: 'en', // Set the default language
   fallbackLng: 'en',
   keySeparator: false, // Allow for nested translations without using dots
   interpolation: {

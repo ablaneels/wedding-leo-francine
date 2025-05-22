@@ -19,8 +19,8 @@
     pointer-events: none; /* So it doesn't block clicks */
 }
 .flowerbottom {
-    width: 196px;
-    height: 315px;
+    width: 156.8px;
+    height: 252px;
     flex-shrink: 0;
     aspect-ratio: 28/45;
 }
