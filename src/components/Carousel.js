@@ -10,15 +10,27 @@ const location = useLocation();
 const getImagesForRoute = (pathname) => {
     switch (pathname) {
     case "/venue":
-        return ["/pictures/Domaine de Millon/319707155_225718826470843_5517565324097533581_n.jpg", "/pictures/Domaine de Millon/Domaine_de_Millon_71.jpg", "/pictures/Domaine de Millon/Domaine_de_Millon_77-scaled (1).jpg", "/pictures/Domaine de Millon/ShootingMillon-0043-scaled (1).jpg"];
+        return ["/pictures/Domaine de Millon/Rectangle 31.jpeg", "/pictures/Domaine de Millon/Rectangle 33.jpeg", "/pictures/Domaine de Millon/Rectangle 35.jpeg", "/pictures/Domaine de Millon/Rectangle 37.jpeg"];
     case "/dresscode":
-        return ["/pictures/Dress Code Page/beautiful-wedding-dress-with-plume-is-dressed-mannequin.jpg"];
+        return ["/pictures/Dress Code Page/Rectangle 29.jpeg"];
     default:
-        return ["/pictures/Francine and Leo/IMG_0378.jpeg", "/pictures/Francine and Leo/IMG_4108.jpeg", "/pictures/Francine and Leo/IMG_4337.jpeg", "/pictures/Francine and Leo/IMG_5759.jpeg", "/pictures/Francine and Leo/IMG_6040.jpeg"];
+        return ["/pictures/Francine and Leo/Rectangle 19.jpeg", "/pictures/Francine and Leo/Rectangle 21.jpeg", "/pictures/Francine and Leo/Rectangle 23.jpeg", "/pictures/Francine and Leo/Rectangle 25.jpeg", "/pictures/Francine and Leo/Rectangle 27.jpeg"];
     }
 };
 
-const images = getImagesForRoute(location.pathname);
+const getImagesForRouteMobile = (pathname) => {
+    switch (pathname) {
+    case "/venue":
+        return ["/pictures/Domaine de Millon/Rectangle 32.jpeg", "/pictures/Domaine de Millon/Rectangle 34.jpeg", "/pictures/Domaine de Millon/Rectangle 36.jpeg", "/pictures/Domaine de Millon/Rectangle 38.jpeg"];
+    case "/dresscode":
+        return ["/pictures/Dress Code Page/Rectangle 30.jpeg"];
+    default:
+        return ["/pictures/Francine and Leo/Rectangle 20.jpeg", "/pictures/Francine and Leo/Rectangle 22.jpeg", "/pictures/Francine and Leo/Rectangle 24.jpeg", "/pictures/Francine and Leo/Rectangle 26.jpeg", "/pictures/Francine and Leo/Rectangle 28.jpeg"];
+    }
+};
+var images = getImagesForRoute(location.pathname);
+if (window.innerWidth <= 960)
+    images = getImagesForRouteMobile(location.pathname);
 
     return (
         <BootstrapCarousel data-bs-theme="light" className='carrousel'>
