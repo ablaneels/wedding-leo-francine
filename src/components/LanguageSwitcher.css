@@ -66,6 +66,7 @@
         justify-content: flex-start;
         gap: 10px;
         z-index: 1000;
+        padding-left: 20px;
     }
 
     .unselected_button {
