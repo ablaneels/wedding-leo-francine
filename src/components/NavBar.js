@@ -30,7 +30,7 @@ function NavBar() {
         <nav className="navbar">
             <div className="navbar-container">
                 <div className='menu-icon' onClick={handleClick}>
-                    <img src={click ? Close : Open}/>
+                    <img src={click ? Close : Open} alt=''/>
                 </div>
                 <ul className={click ? 'menu active': 'menu'}>
                     <li className='navbar-item'>
@@ -53,11 +53,11 @@ function NavBar() {
                             {t('navbar_dressCode')}
                         </Link>
                     </li>
-                    <li className='navbar-item'>
+                    {/* <li className='navbar-item'>
                         <Link to="/agenda" className={selectedLink === '/agenda' ? 'selected-navbar-link' : 'navbar-link'} onClick={closeMobileMenu}>
                             {t('navbar_agenda')}
                         </Link>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
         </nav>

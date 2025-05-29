@@ -64,14 +64,14 @@ function Venue() {
         {activeTab === 'sleeping' && (
           <>
             <div className='subtab_title'>sleeping</div>
-            <div className='subtab_text'>sleeping</div>
+            <div className='subtab_text'></div>
           </>
         )}
 
         {activeTab === 'transportation' && (
           <>
             <div className='subtab_title'>transportation</div>
-            <div className='subtab_text'>transportation</div>
+            <div className='subtab_text'></div>
           </>
         )}
       </div>

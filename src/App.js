@@ -7,7 +7,7 @@ import Home from './components/pages/Home';
 import Rsvp from './components/pages/Rsvp';
 import Venue from './components/pages/Venue';
 import DressCode from './components/pages/DressCode';
-import Agenda from './components/pages/Agenda';
+// import Agenda from './components/pages/Agenda';
 import LanguageSwitcher from './components/LanguageSwitcher';
 import FlowerTop from "./icons/7103500 3.svg"
 import FlowerBotton from "./icons/7103500 2.svg"
@@ -29,7 +29,7 @@ function App() {
           <Route path='/rsvp' exact Component={Rsvp}/>
           <Route path='venue' exact Component={Venue}/>
           <Route path='dresscode' exact Component={DressCode}/>
-          <Route path='agenda' exact Component={Agenda}/>
+          {/* <Route path='agenda' exact Component={Agenda}/> */}
         </Routes>
         <LanguageSwitcher />
       </Router>
