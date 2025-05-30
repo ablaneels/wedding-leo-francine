@@ -18,7 +18,7 @@ function Venue() {
       <div className='venue'>
         <div className='title'>
           {t('venue_title')}
-          <div className='website'>{t('venue_website')}</div>
+          <div className='website'><a className='website' href='https://www.domainedemillon.fr'>{t('venue_website')}</a></div>
         </div>
         <div className='tabs'>
           <div
